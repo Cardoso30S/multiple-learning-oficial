@@ -94,7 +94,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    padding: 50px 0 20px 0;
+    padding: 40px 10px 20px 10px;
 }
 
 .navbar-menu {
