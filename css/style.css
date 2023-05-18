@@ -94,7 +94,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    padding: 40px 10px 20px 10px;
+    padding: 30px 10px 10px 10px;
 }
 
 .navbar-menu {
@@ -154,7 +154,7 @@ footer {
 }
 
 .linha-grid {
-    box-shadow: 1px 1px 200px rgb(0 0 0 / 5%);
+    box-shadow: 1px 1px 200px rgba(225, 225, 225, 0.05);
     display: flex;
     margin: 20px;
     background-color: var(--white);
@@ -164,7 +164,8 @@ footer {
 .linha-grid-col {
     align-items: center;
     display: flex;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .linha-grid-col-text {
