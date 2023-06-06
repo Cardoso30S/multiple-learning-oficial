@@ -1,14 +1,14 @@
-/* PADRÃO DE CORES DO MANUAL SENAI */
 :root {
     --red: #e30613;
     --black: #000000;
-    --white: #ffffff;
+    --light-blue: #c2d0eb;
     --gray: #878787;
     --redMedium: #9a1915;
     --redDark: #681413;
+    --white: #ffffff;
 }
-/* AQUI ESTÃO SOMENTE AS TAGS COM SUAS PROPRIEDADES */
-*{
+
+* {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth !important;
@@ -25,9 +25,8 @@ body {
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
-    background-color: var(--gray) ;
+    background-color: var(--light-blue);
     width: 100%;
-    height: 100%;
 }
 
 header {
@@ -37,6 +36,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
+    align-items: center;
 }
 
 a {
@@ -54,6 +54,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+    margin-block-end: 45px;
 }
 
 h1 {
@@ -63,24 +64,32 @@ h1 {
     padding-bottom: 4px;
     margin: 0;
     color: var(--black);
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+p {
+    font-family: 'McLaren', cursive;
+    font-size: 20px;
 }
 
 h2 {
     text-align: center;
-    font-size: 32px;
+    font-size: 5clamp(1em, 1em + 1vw, 1.5em);
     padding-top: 16px;
     padding-bottom: 4px;
     margin: 0;
     color: var(--black);
+    font-family: 'McLaren', cursive;
 }
 
-footer{
+footer {
     background-color: var(--red);
     width: 100%;
-    bottom: 0;
-    z-index: 999;
+    bottom: 0px;
+    position: relative;
+    margin-top: 50px;
 }
-/* AQUI COMEÇA OS STYLES DAS CLASSES E IDS */
+
 .container-fluid {
     max-width: 1440px;
 }
@@ -88,12 +97,13 @@ footer{
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 40px 10px 20px 10px;
+    align-items: baseline;
+    padding: 50px 10px 20px 10px;
 }
 
 .navbar-menu {
     display: flex;
+    align-items: center;
 }
 
 .navbar-logo {
@@ -120,6 +130,18 @@ footer{
     padding-right: 10px;
 }
 
+#multiple-learning {
+    width: 50%
+}
+
+.nav-link {
+    font-weight: 700;
+    color: var(--black);
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+}
+
 .footer-icons {
     display: flex;
     padding: 10px;
@@ -142,3 +164,126 @@ footer{
     justify-content: center;
     text-align: center;
 }
+
+#elefante {
+    width: 400px;
+    justify-content: flex-end;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* #videos {
+    position: relative;
+} */
+
+iframe{
+    padding: 20px;
+}
+
+.titulo {
+    margin-bottom: 50px;
+}
+
+.texto {
+    text-align: justify;
+    max-width: 768px;
+    padding: 20px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-device-width: 768px) {
+    [class="col-"] {
+        width: 100%;
+    }
+}
+
+.topo {
+    text-align: center;
+}
+
+#interatividade {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[style*="--aspect-ratio"] > :first-child {
+    width: 100%;
+  }
+  
+  [style*="--aspect-ratio"] > img {  
+    height: auto;
+  }
+  
+  @supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+      position: relative;
+    }
+    
+    [style*="--aspect-ratio"]::before {
+      content: "";
+      display: block;
+      padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+    
+    [style*="--aspect-ratio"] > :first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }  
+  }

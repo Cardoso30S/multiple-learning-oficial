@@ -11,12 +11,11 @@
     <meta name="description"
         content="Portal educacional desenvolvido pelos alunos dos cursos Técnico de Desenvolvimento de Sistemas e Multimídia do SESI-SENAI de Caçapava">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
-    <link rel="stylesheet" href="css/grupo6.css">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
-    <title>vídeos Multiple Learning</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+    <link rel="stylesheet" href="css/grupo7.css">
+    <title>Regra de sinais Multiple Learning SESI-SENAI</title>
 </head>
 
 <body>
@@ -27,24 +26,21 @@
             <div class="container-fluid">
                 <!-- Navbar brand -->
                 <a class="navbar-logo" href="index.html">
-                    <img src="img/LogoSesiSenai.png" alt="Logo Sesi Senai" description="Logo do Sesi e do Senai">
+                    <img src="img/LogoSesiSenai.webp" alt="Logo Sesi Senai" description="Logo do Sesi e do Senai">
                 </a>
-
                 <!-- Toggle button -->
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
                     data-mdb-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
-
                 <!-- Collapsible wrapper -->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link" href="#videos">Vídeos</a>
-                        <a class="nav-link" href="#podcasts">Podcasts</a>
-                        <a class="nav-link" href="#interatividade">Interatividade</a>
-                        <a class="nav-link" href="#compartilhar">Compartilhar</a>
+                        <a class="nav-link" href="#parodia">Paródia</a>
+                        <a class="nav-link" href="#video">Vídeo</a>
+                        <a class="nav-link" href="#interatividade">Jogo</a>
                     </div>
                 </div>
                 <!-- Collapsible wrapper -->
@@ -55,34 +51,112 @@
     </header>
 
     <main>
-        <h1>Multiple Learning</h1>
+        <div class="topo-g7">
+            <img id="img-background" src="./img/regra_de_sinais_banner.webp" alt="Foto banner regras de sinais">
+        </div>
+
         <div class="content">
-            <div>
+            <div class="grid2">
+                <div class="g-col-4">
+                    <p class="texto">
+                        O jogo de sinais é o modo como ficaram conhecidas
+                        as regras usadas para decidir o sinal do resultado das
+                        operações matemáticas básicas. É o conjunto de regras
+                        matemáticas utilizadas para decidir qual será o sinal
+                        do resultado de diversas operações matemáticas, desde
+                        as mais simples como a adição até as mais complexas.
+                    </p>
+                </div>
+                <div class="g-col-6">
+                    <iframe class="videos" id="parodia" src="https://www.youtube.com/embed/CsyOLsSuiQk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="grid">
+                <div class="g-col-6">
+                    <iframe id="video" class="videos" src="https://www.youtube.com/embed/9jsek8ZjB1Q" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="g-col-4">
+                    <p class="paragrafo">
+                        Esse vídeo apresentará o conteúdo
+                        abordado com ainda mais detalhes e
+                        aprofundamento, tendo total
+                        instrutoria e conferimento dos
+                        professores de matemática do SESI
+                        Caçapava.
+                    </p>
+                </div>
 
             </div>
         </div>
 
-        <div class="videos">
-            <div>
-
-            </div>
-        </div>
-
-        <div class="podcasts">
-            <div>
-
+        <div id="interatividade">
+            <div class="quiz">
+                <iframe id="jogo" style="max-width:100%"
+                    src="https://wordwall.net/pt/embed/c74ee33efdbd4b5680e8802d7cf0372e?themeId=21&templateId=30&fontStackId=2%22"
+                    width="100%" height="240px" frameborder="0" allowfullscreen>
+                </iframe>
             </div>
         </div>
 
         <div class="interatividade">
-            <div>
-
+            <div class="conteudo">
+                <h4>Regra do sinal na adição e na subtração</h4>
+                <p class="dist">1. A soma de dois números positivos (+ / +) será um resultado positivo.</br>
+                    <strong>23 + 30 = + 53</strong>
+                </p>
+                <p class="dist">2. A soma de dois números negativos resultará em um número também negativo.</br>
+                    <strong>(-55) + (-10) = -65</strong>
+                </p>
+                <p class="dist">A soma de dois números com sinais diferentes deve ser resolvida através da subtração
+                    entre eles.</br>
+                    <strong>+12 + (-7) = +5</strong>
+                </p>
             </div>
-        </div>
-
-        <div class="compartilhar">
-            <div>
-
+            <div class="conteudo">
+                <h4>Regra do sinal na multiplicação</h4>
+                <p class="dist">2. A multiplicação de dois números positivos sempre terá resultados positivos.</br>
+                    <strong>(+11) * (+11) = +121</strong>
+                </p>
+                <p class="dist">Por outro lado, a multiplicação de dois números negativos resultará em um número
+                    positivo.</br>
+                    <strong>(-12) * (-12) = +144</br>
+                        (-7) * (-2) = +14</strong>
+                </p>
+                <p class="dist">Já a multiplicação de um número positivo por um número negativo terá um resultado
+                    negativo.</br>
+                    <strong>( -14) * (+10) = -140</br>
+                        (-1) * (5) = -5</strong>
+                </p>
+            </div>
+            <div class="conteudo">
+                <h4>Regra do sinal na divisão</h4>
+                <p class="dist">3. A divisão de dois números positivos sempre resultará em um número também
+                    positivo.</br>
+                    <strong> +12 / +2 = 6
+                        +10 / +5 = 2</strong>
+                </p>
+                <p class="dist">A divisão de um número negativo por outro número negativo terá um resultado
+                    positivo.</br>
+                    <strong>-12 / -2 = + 6
+                        -10 / -5 = +2</strong>
+                </p>
+                <p class="dist">Agora, uma divisão entre um número positivo e outro de sinal negativo resultará em
+                    um número
+                    de sinal negativo.</br>
+                    <strong>+12 / -2 = -6
+                        -10 / +5 = -2</strong>
+                </p>
             </div>
         </div>
     </main>

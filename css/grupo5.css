@@ -3,20 +3,18 @@
     --red: #e30613;
     --black: #000000;
     --white: #ffffff;
-    --gray: #878787;
+    --gray: #cecece;
     --redMedium: #9a1915;
     --redDark: #681413;
-}
-/* AQUI ESTÃO SOMENTE AS TAGS COM SUAS PROPRIEDADES */
-*{
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth !important;
+    --blue: #1eb39f;
+    --green: #cdfaaf;
+    --bluebb: #d9fff7;
 }
 
-html {
-    width: 100%;
-    height: 100%;
+/* AQUI ESTÃO SOMENTE AS TAGS COM SUAS PROPRIEDADES */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -25,14 +23,16 @@ body {
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
-    background-color: var(--gray) ;
+    background-color: var(--bluebb);
     width: 100%;
     height: 100%;
+
 }
 
 header {
     background-color: var(--white);
     color: var(--black);
+    /* min-height: 60px; */
     width: 100%;
     position: sticky;
     top: 0;
@@ -44,6 +44,10 @@ a {
     align-items: center;
 }
 
+a :hover {
+    opacity: 0.3;
+}
+
 ul {
     list-style: none;
 }
@@ -51,94 +55,457 @@ ul {
 main {
     max-width: 1440px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     height: 100%;
 }
 
-h1 {
-    text-align: center;
-    font-size: 48px;
-    padding-top: 16px;
-    padding-bottom: 4px;
-    margin: 0;
-    color: var(--black);
+footer {
+    margin-top: 3em;
+    background-color: var(--red);
+    width: 100%;
+    height: 210px;
+    position: sticky;
 }
 
-h2 {
-    text-align: center;
+/* AQUI COMEÇA OS STYLES DAS CLASSES E IDS */
+
+h1 {
     font-size: 32px;
     padding-top: 16px;
     padding-bottom: 4px;
-    margin: 0;
+    margin-left: 70px;
+    color: var(--blue);
+}
+
+h2 {
+    font-size: 17px;
+    padding-top: 16px;
+    padding-bottom: 4px;
+    margin-left: 70px;
     color: var(--black);
 }
 
-footer{
-    background-color: var(--red);
-    width: 100%;
-    bottom: 0;
-    z-index: 999;
+.container {
+    max-width: 1140px;
 }
-/* AQUI COMEÇA OS STYLES DAS CLASSES E IDS */
+
 .container-fluid {
-    max-width: 1440px;
+    max-width: 1140px;
 }
 
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 40px 10px 20px 10px;
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 50px 0 20px 0;
+    }
+
+    .navbar-menu {
+        display: flex;
+    }
+
+    .nav-link {
+        display: flex;
+    }
+
+    .navbar-logo {
+        width: 30%;
+        align-items: center;
+        margin-bottom: 2%;
+        margin-left: 5%;
+    }
+
+    .navbar-items {
+        display: none;
+        flex-direction: row;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-items-menu {
+        padding: 0;
+        border-bottom: 5px solid transparent;
+    }
+
+    .logoedit {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .sub {
+        font-size: xx-large;
+        font-weight: bolder;
+        color: var(--blue);
+    }
+
+    .sub-text {
+        text-align: justify;
+        margin-bottom: 60px;
+    }
+
+    .download {
+        text-align: center;
+        margin-top: 50px;
+        border-radius: 5px;
+        border-style: none;
+        color: var(--white);
+        background-color: var(--blue);
+        height: 60px;
+        width: 100px;
+    }
+
+    .footer-icons {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .items-social-media {
+        color: var(--white);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .footer-link {
+        color: var(--white);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .interatividade {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        color: var(--blue);
+        font-size: large;
+        font-weight: bold;
+    }
+
+    #logoedit {
+        width: 90%;
+    }
+
+    #download {
+        color: white;
+    }
+
+    #VIDEO {
+        width: 100%;
+        height: 240px;
+        margin-bottom: 60px
+    }
+
+    #map {
+        width: 100%;
+        height: 260px;
+    }
+
+    #burger {
+        display: flex;
+        justify-content: end;
+        color: var(--black);
+        cursor: pointer;
+        margin-bottom: 2%;
+        margin-left: 40%;
+    }
+
+    #burger:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
 }
 
-.navbar-menu {
-    display: flex;
+/* estilos aplicados a dispositivos com tela menor ou igual a 768px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* estilos aplicados a dispositivos com tela entre 769px e 1024px */
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 50px 0 20px 0;
+    }
+
+    .navbar-menu {
+        display: flex;
+    }
+
+    .navbar-logo {
+        align-items: center;
+        margin-bottom: 2%;
+    }
+
+    .navbar-items {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-items-menu {
+        padding: 0;
+        border-bottom: 5px solid transparent;
+    }
+
+    .nav-link {
+        display: flex;
+        font-weight: 700;
+        color: var(--black);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logoedit {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .sub {
+        font-size: xx-large;
+        font-weight: bolder;
+        color: var(--blue);
+    }
+
+    .sub-text {
+        text-align: justify;
+        margin-bottom: 60px;
+    }
+
+    .download {
+        text-align: center;
+        margin-top: 50px;
+        border-radius: 5px;
+        border-style: none;
+        color: var(--white);
+        background-color: var(--blue);
+        height: 60px;
+        width: 100px;
+    }
+
+    .footer-icons {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .items-social-media {
+        color: var(--white);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .footer-link {
+        color: var(--white);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .interatividade {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        color: var(--blue);
+        font-size: large;
+        font-weight: bold;
+    }
+
+    #logoedit {
+        width: 60%;
+    }
+
+    #download {
+        color: white;
+    }
+
+    #VIDEO {
+        width: 720px;
+        height: 405px;
+        margin-bottom: 30px;
+    }
+
+    #map {
+        width: 800px;
+        height: 600px;
+    }
+
+    #burger {
+        display: none;
+    }
 }
 
-.navbar-logo {
-    align-items: center;
-}
+@media (min-width: 1025px) {
 
-.navbar-items {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin-left: auto;
-    margin-right: auto;
-}
+    /* estilos aplicados a dispositivos com tela maior que 1025px */
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 50px 0 20px 0;
+    }
 
-.navbar-items-menu {
-    padding: 0;
-    border-bottom: 5px solid transparent;
-}
+    .navbar-menu {
+        display: flex;
+    }
 
-.nav-link {
-    font-weight: 700;
-    color: var(--black);
-    padding-left: 10px;
-    padding-right: 10px;
-}
+    .navbar-logo {
+        align-items: center;
+        margin-bottom: 2%;
+    }
 
-.footer-icons {
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+    .navbar-items {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.items-social-media {
-    color: var(--white);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 15px;
-}
+    .navbar-items-menu {
+        padding: 0;
+        border-bottom: 5px solid transparent;
+    }
 
-.footer-link {
-    color: var(--white);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    .nav-link {
+        display: flex;
+        font-weight: 700;
+        color: var(--black);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logoedit {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .sub {
+        font-size: xx-large;
+        font-weight: bolder;
+        color: var(--blue);
+    }
+
+    .sub-text {
+        text-align: justify;
+        margin-bottom: 60px;
+    }
+
+    .download {
+        text-align: center;
+        margin-top: 50px;
+        border-radius: 5px;
+        border-style: none;
+        color: var(--white);
+        background-color: var(--blue);
+        height: 60px;
+        width: 100px;
+    }
+
+    .footer-icons {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .items-social-media {
+        color: var(--white);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .footer-link {
+        color: var(--white);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .interatividade {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        color: var(--blue);
+        font-size: large;
+        font-weight: bold;
+    }
+
+    #logoedit {
+        width: 60%;
+    }
+
+    #download {
+        color: white;
+    }
+
+    #VIDEO {
+        width: 1020px;
+        height: 500px;
+        margin-bottom: 100px
+    }
+
+    #map {
+        width: 1020px;
+        height: 600px;
+    }
+
+    #burger {
+        display: none;
+    }
 }

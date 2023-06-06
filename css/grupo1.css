@@ -6,9 +6,15 @@
     --gray: #878787;
     --redMedium: #9a1915;
     --redDark: #681413;
+    --brownDark: #5E1F28;
+    --orangeDark: #8a2f2e;
+    --orange: #AE5543;
+    --yellow: #F7BB75;
+    --green: #83764C;
 }
+
 /* AQUI ESTÃO SOMENTE AS TAGS COM SUAS PROPRIEDADES */
-*{
+* {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth !important;
@@ -25,9 +31,8 @@ body {
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
-    background-color: var(--gray) ;
+    background-color: var(--yellow);
     width: 100%;
-    height: 100%;
 }
 
 header {
@@ -37,6 +42,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
+    align-items: center;
+}
+
+#logomultiple {
+    margin-left: 100%;
+    align-items: center;
 }
 
 a {
@@ -54,6 +65,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+    margin-block-end: 45px;
 }
 
 h1 {
@@ -74,26 +86,51 @@ h2 {
     color: var(--black);
 }
 
-footer{
+footer {
     background-color: var(--red);
     width: 100%;
     bottom: 0;
-    z-index: 999;
+    padding-bottom: 10px;
+    position: relative;
+    margin: auto;
 }
+
+.sub {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 16px;
+    padding-bottom: 4px;
+    margin: 0;
+    font-family: poppins;
+    color: var(--brownDark);
+    font-weight: 500;
+}
+
+.videos {
+    text-align: center;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
 /* AQUI COMEÇA OS STYLES DAS CLASSES E IDS */
 .container-fluid {
-    max-width: 1440px;
+    max-width: 1140px;
 }
 
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 40px 10px 20px 10px;
+    align-items: baseline;
+    padding: 50px 0 20px 0;
 }
 
 .navbar-menu {
     display: flex;
+    align-items: center;
 }
 
 .navbar-logo {
@@ -141,4 +178,120 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+h2 {
+    color: var(--brownDark);
+    font-weight: bold;
+    font-family: poppins;
+}
+
+p {
+    color: var(--orangeDark);
+    font-family: poppins;
+    text-align: justify;
+}
+
+.textos{
+    margin: 30px;
+}
+
+h4 {
+    color: var(--black);
+    font-family: poppins;
+}
+
+
+#logomultiple {
+    display: flex;
+    margin: auto;
+    width: 85%;
+}
+
+#btn {
+    background-color: var(--orangeDark);
+    color: var(--white);
+    font-family: poppins;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    #logomultiple {
+        display: flex;
+        width: 50%;
+    }
+
+    iframe {
+        width: 50%;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .videos {
+        padding: 10%;
+        display: flex;
+        justify-content: start;
+        text-align: center;
+    }
+
+    .button {
+        display: flex;
+        justify-content: start;
+    }
+
+    .ResModernismo {
+        padding: 10%;
+    }
+
+    .ResRomantismo {
+        padding: 10%;
+        justify-content: start;
+        text-align: start;
+    }
+
+    #logomultiple {
+        display: flex;
+    }
+
+    iframe {
+        height: 100%;
+    }
+}
+
+#logosesi {
+
+    margin-bottom: 50%;
+    margin-top: 50%;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

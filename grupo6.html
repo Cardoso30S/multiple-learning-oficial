@@ -11,15 +11,16 @@
     <meta name="description"
         content="Portal educacional desenvolvido pelos alunos dos cursos Técnico de Desenvolvimento de Sistemas e Multimídia do SESI-SENAI de Caçapava">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
     <link rel="stylesheet" href="css/grupo6.css">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
-    <title>vídeos Multiple Learning</title>
+    <link rel="shortcut icon" href="img/favicon_io (1)/favicon.ico" type="image/x-icon" />
+    <title>Tabuada</title>
 </head>
 
 <body>
+    <!-- Esse é a logo do Sesi -->
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,24 +28,19 @@
             <div class="container-fluid">
                 <!-- Navbar brand -->
                 <a class="navbar-logo" href="index.html">
-                    <img src="img/LogoSesiSenai.png" alt="Logo Sesi Senai" description="Logo do Sesi e do Senai">
+                    <img src="img/LogoSesiSenai.webp" alt="Logo Sesi Senai" description="Logo do Sesi e do Senai">
                 </a>
-
                 <!-- Toggle button -->
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
                     data-mdb-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
-
                 <!-- Collapsible wrapper -->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link" href="#videos">Vídeos</a>
-                        <a class="nav-link" href="#podcasts">Podcasts</a>
-                        <a class="nav-link" href="#interatividade">Interatividade</a>
-                        <a class="nav-link" href="#compartilhar">Compartilhar</a>
+                        <a class="nav-link active" aria-current="page" href="#videos">Vídeos</a>
                     </div>
                 </div>
                 <!-- Collapsible wrapper -->
@@ -55,34 +51,52 @@
     </header>
 
     <main>
-        <h1>Multiple Learning</h1>
-        <div class="content">
-            <div>
-
+        <div class="container-fluid">
+            <div class="imagem">
+                <a href="index.html"><img id="multiple" src="img/Logo_Multiple-Learning.webp" title="Logo Multiple Learning"/></a>
+                <a href="index.html"><img id="abelha" src="img/mascote_atualizado.webp" title="Logo Abelha Tabutica" /></a>
             </div>
-        </div>
 
-        <div class="videos">
-            <div>
-
+            <div class="tabu">
+                <h1>Tabuada</h1>
             </div>
-        </div>
 
-        <div class="podcasts">
-            <div>
-
+            <div class="grid">
+                <div class="g-col-6">
+                    <div class="texto-tabuada">
+                        <p>A tabuada é uma representação em forma de tabela utilizada para fazer cálculos
+                            das operações matemáticas: adição, subtração, multiplicação e divisão.
+                            Ela contempla os dez algarismos: 1, 2, 3, 4, 5, 6, 7, 8, 9 e 10, que são
+                            apresentados por colunas e linhas definidas de acordo com o tipo de cálculo
+                            que será feito.</p>
+                    </div>
+                </div>
+                <div class="g-col-4">
+                    <iframe id="videos" class="id-video" src="https://www.youtube.com/embed/JQA1sTuuq_c"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
             </div>
-        </div>
 
-        <div class="interatividade">
-            <div>
+            <div class="content">
+                <div class="content-button">
+                    <p class="quizz">Conheça nosso quiz</p>
 
-            </div>
-        </div>
+                    <center><a class="button" href="https://www.fyrebox.com/play/rnqq8rjzom7qnv7rzn/" target="_blank">Clique aqui</a></center>
+                </div>
 
-        <div class="compartilhar">
-            <div>
+                <div>
+                    <h3 id="texto-video">No próximo vídeo temos uma breve explicação do que é uma tabuada</h3>
+                </div>
 
+                <div>
+                    <center><iframe class="id-video" src="https://www.youtube.com/embed/UozZNOkGORE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </center>
+                </div>
             </div>
         </div>
     </main>
@@ -106,9 +120,9 @@
             </a>
         </div>
         <div class="footer-link">
-            <strong>Escola SESI-SP de Caçapava - Pq. Residencial Maria Elmira (CE 207)</strong>
-            <p>Av. Monsenhor Theodomiro Lobo, 100 - Pq. Residencial Maria Elmira</p>
-            <p>(12) 3653-1943</p>
+            <p><strong>Escola SESI-SP de Caçapava - Pq. Residencial Maria Elmira (CE 207)</strong><br>
+                Av. Monsenhor Theodomiro Lobo, 100 - Pq. Residencial Maria Elmira <br> (12) 3653-1943
+            </p>
         </div>
     </footer>
 </body>
