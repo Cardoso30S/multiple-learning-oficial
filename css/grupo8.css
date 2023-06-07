@@ -88,6 +88,7 @@ footer {
     bottom: 0px;
     position: relative;
     margin-top: 50px;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .container-fluid {
@@ -163,6 +164,10 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.text-footer{
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #elefante {

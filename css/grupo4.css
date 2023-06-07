@@ -6,9 +6,13 @@
     --gray: #878787;
     --redMedium: #9a1915;
     --redDark: #681413;
+    --orange: #ffc812;
+    --orange: #ff9e1f;
+    --orange: #e86a10;
 }
+
 /* AQUI ESTÃO SOMENTE AS TAGS COM SUAS PROPRIEDADES */
-*{
+* {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth !important;
@@ -16,7 +20,6 @@
 
 html {
     width: 100%;
-    height: 100%;
 }
 
 body {
@@ -25,9 +28,8 @@ body {
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
-    background-color: var(--gray) ;
+    background-color: #f2cf66;
     width: 100%;
-    height: 100%;
 }
 
 header {
@@ -37,6 +39,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
+    align-items: center;
 }
 
 a {
@@ -49,11 +52,9 @@ ul {
 }
 
 main {
-    max-width: 1440px;
-    display: block;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
 }
 
 h1 {
@@ -74,26 +75,34 @@ h2 {
     color: var(--black);
 }
 
-footer{
+footer {
     background-color: var(--red);
     width: 100%;
     bottom: 0;
-    z-index: 999;
+    padding-bottom: 10px;
+    position: relative;
 }
+
+
 /* AQUI COMEÇA OS STYLES DAS CLASSES E IDS */
 .container-fluid {
-    max-width: 1440px;
+    max-width: 1140px;
+}
+
+.container {
+    max-width: 1140px;
 }
 
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 40px 10px 20px 10px;
+    align-items: baseline;
+    padding: 50px 0 20px 0;
 }
 
 .navbar-menu {
     display: flex;
+    align-items: center;
 }
 
 .navbar-logo {
@@ -141,4 +150,53 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.imagem {
+    width: 100%;
+    height: 500px;
+}
+
+#logoml {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoMultiple {
+    width: 30%;
+}
+
+#logoPassado {
+    width: 30%;
+}
+
+.logs{
+    display: contents;
+}
+
+.mapas{
+    margin-bottom: 30px;
+}
+
+.videos {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.fab{
+    margin: 10px;
+}
+
+@media (max-width:1140px) {
+    .vid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+     iframe{
+        margin: 15px 0;
+     }
 }
